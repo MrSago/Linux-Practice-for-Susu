@@ -24,7 +24,6 @@
 `passwd [user_name]` | Установка пароля для пользователя [user_name] | ![passwd](./images/passwd.png)
 `usermod -l [new_user_name] [user_name]` | Изменение имени пользователя [user_name] на [new_user_name] | ![usermod](./images/usermod.png)
 
-
 Обозначение спец. символов:
 - / - директория:
 - \* - исполняемый файл;
