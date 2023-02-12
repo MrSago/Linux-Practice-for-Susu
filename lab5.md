@@ -3,7 +3,8 @@
 
 1. Используя терминал (консоль) создайте структуру каталогов и файлов, как показано на рисунке 1.
 
-   `mkdir -p Lab5/Folder1 Lab5/Folder2 ; touch Lab5/Folder1/project.list Lab5/Folder2/actions.log Lab5/user.list`\
+   `mkdir -p Lab5/Folder1 Lab5/Folder2 ; touch Lab5/Folder1/project.list Lab5/Folder2/actions.log Lab5/user.list`
+
    ![lab5-1.png](./images/lab5-1-1.png)
 
 2. Используя текстовый редактор nano, отредактируйте файл user.list: задайте 5 блоков информации о пользователях, пример показан на рисунке 2. После завершения закройте с сохранением редактор nano (сочетание клавиш \<Ctrl+X>).
@@ -105,13 +106,15 @@
 
    `log "Добавлен alias"`
 
-   `cat Lab5/Folder2/actions.log`\
+   `cat Lab5/Folder2/actions.log`
+
    ![lab5-4-2.png](./images/lab5-4-2.png)
 
 5. Просмотрите содержимое файлов user.list и project.list при помощи команды cat. Не забудьте добавить в ваш журнал действий соответствующие записи (рисунок 8).
 
    `cat Lab5/user.list && log "cat /Lab5/user.list"`\
-   `cat Lab5/Folder1/project.list && log "cat Lab5/Folder1/project.list"`\
+   `cat Lab5/Folder1/project.list && log "cat Lab5/Folder1/project.list"`
+
    ![lab5-5.png](./images/lab5-5-1.png)
 
    Итак, самое время вам представиться. Используя созданный вами псевдоним log, запишите в файл actions.log следующую строку, в указанном формате: «Фамилия Имя Отчество студента, Номер группы».
@@ -120,34 +123,40 @@
 
 6. Изучите команды head и tail продемонстрируйте преподавателю результат: последовательно выведите первые 5 строк файла user.list и последние 9 строк файла actions.log в окно терминала, как показано на рисунке 9.
 
-   `log "head && tail" && head -n 5 Lab5/user.list && tail -n 9 Lab5/Folder2/actions.log`\
+   `log "head && tail" && head -n 5 Lab5/user.list && tail -n 9 Lab5/Folder2/actions.log`
+
    ![lab5-6.png](./images/lab5-6-1.png)
 
    Изучите команду grep и продемонстрируйте преподавателю результат:
 
    - Выведите строки в файле project.list, используя шаблон для поиска «Название проекта» (рисунок 10).
 
-      `log "grep" && grep "Название проекта" Lab5/Folder1/project.list`\
+      `log "grep" && grep "Название проекта" Lab5/Folder1/project.list`
+
       ![lab5-6-2.png](./images/lab5-6-2.png)
    - Выведите строки в файле user.list, используя шаблон «ФИО», а также следующие за результатом 3 строки (рисунок 11);
 
-      `log "grep -A 3" && grep -A 3 "ФИО" Lab5/user.list`\
+      `log "grep -A 3" && grep -A 3 "ФИО" Lab5/user.list`
+
       ![lab5-6-3.png](./images/lab5-6-3.png)
    - Выведите строки в файле user.list, используя шаблон «ФИО», а также предшествующую им строку (рисунок 12);
 
-      `log "grep -B 1" && grep -B 1 "ФИО" Lab5/user.list`\
+      `log "grep -B 1" && grep -B 1 "ФИО" Lab5/user.list`
+
       ![lab5-6-4.png](./images/lab5-6-4.png)
 
    - придумайте пример, чтобы вывести строки, используя выбранный вами шаблон, плюсминус 2 строки (а рисунок-пример я вам не дам).
 
    - Вывод строк, содержащих gmail.com.
 
-      `log "grep gmail.com" && grep "gmail.com" Lab5/user.list`\
+      `log "grep gmail.com" && grep "gmail.com" Lab5/user.list`
+
       ![lab5-6-5.png](./images/lab5-6-5.png)
 
    - Вывод строк, содержащих 555 и 2 строки предшествующих им.
 
-      `log "grep -B 2 "555"" && grep -B 2 "555" Lab5/user.list`\
+      `log "grep -B 2 "555"" && grep -B 2 "555" Lab5/user.list`
+
       ![lab5-6-6.png](./images/lab5-6-6.png)
 
 7. Изучите команды Linux, указанные в таблице и продемонстрируйте преподавателю результаты на основе разработанных вами примеров. sort uniq less comm past wc tr nl cut split.
@@ -169,21 +178,24 @@
 
    - создайте архив каталога Lab5;
 
-      `log "tar -cvf" && tar -cvf Lab5.tar Lab5`\
+      `log "tar -cvf" && tar -cvf Lab5.tar Lab5`
+
       ![lab5-8-1.png](./images/lab5-8-1.png)
 
    - выведите в терминал содержимое архива;
 
-      `log "tar -tvf" && tar -tvf Lab5.tar`\
+      `log "tar -tvf" && tar -tvf Lab5.tar`
+
       ![lab5-8-2.png](./images/lab5-8-2.png)
 
    - разархивируйте созданный архив в другой каталог.
 
       `mkdir another`\
-      `log "tar -xvf" && tar -xvf Lab5.tar -C another`\
+      `log "tar -xvf" && tar -xvf Lab5.tar -C another`
+
       ![lab5-8-3.png](./images/lab5-8-3.png)
 
-## Ответы на вопросы
+## Ответы на контрольные вопросы
 
 1. Какую команду вы применяли для создания каталогов?
 
